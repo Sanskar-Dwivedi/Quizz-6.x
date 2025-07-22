@@ -1,6 +1,6 @@
 #include <iostream>
 
-std::string getQuantityPhrase(int numbApple)
+std::string_view getQuantityPhrase(int numbApple)
 {
     if (numbApple < 0)
         return "negative";
@@ -17,7 +17,7 @@ std::string getQuantityPhrase(int numbApple)
     return 0;
 }
 
-std::string getApplesPluralized(int numbApple)
+std::string_view getApplesPluralized(int numbApple)
 {
     return (numbApple == 1) ? "apple" : "apples";
 }
